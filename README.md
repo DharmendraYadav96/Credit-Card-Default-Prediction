@@ -6,13 +6,12 @@ This repository contains code and resources for a Credit Card Default Prediction
 
 - [Introduction](#introduction)
 - [Dataset](#dataset)
-- [Getting Started](#getting-started)
 - [Data Preprocessing](#data-preprocessing)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Feature Engineering](#feature-engineering)
 - [Model Building](#model-building)
 - [Evaluation](#evaluation)
-- [Deployment](#deployment)
+
 
 
 ## Introduction
@@ -61,19 +60,31 @@ Data preprocessing is crucial for cleaning and preparing the dataset for model t
 
 ## Exploratory Data Analysis
 
-Exploratory Data Analysis (EDA) is performed to gain insights into the dataset. The notebook contains visualizations and summary statistics to better understand the data.
+Exploratory Data Analysis (EDA) is performed to gain insights into the dataset. Exploratory Data Analysis (EDA) in credit card default prediction uncovers valuable insights for business improvement. It reveals default rate patterns, guides the setting of optimal credit limits, and assists in tailoring risk management strategies. EDA also explores correlations between factors like age, income, and education levels with default rates, aiding in product design and risk assessment. Additionally, it can identify effective feature engineering techniques, improve data balance, and enhance outlier detection. These insights enable businesses to refine their prediction models, boost risk management practices, and optimize customer engagement, ultimately leading to improved financial stability and customer satisfaction.
 
 ## Feature Engineering
 
 Feature engineering involves creating new features or transforming existing ones to improve model performance. In this project, feature engineering techniques are applied to enhance the predictive power of the model.
+1. Handling Imbalanced dataset: SMOTE (Synthetic Minority Oversampling Technique) technique is used for balancing the imbalanced dataset.
+2. Binning: The age column has been discretized through binning. Binning in feature engineering is the process of dividing a continuous numerical feature into discrete intervals (bins) to simplify data and improve machine learning model performance. 
 
 ## Model Building
 
-Multiple machine learning models are trained and evaluated for credit card default prediction. The notebook includes code for training and testing different models, such as logistic regression, decision trees, and ensemble methods.
+Multiple machine learning models are trained and evaluated for credit card default prediction. The notebook includes code for training and testing different models, such as:
+1. Logistic regression
+2. KNN
+3. Support vector classifier
+4. Decision trees
+5. Random forest
+6. XGBoost
 
 ## Evaluation
 
-The model's performance is assessed using various evaluation metrics such as accuracy, precision, recall, and F1-score. The notebook provides a comprehensive analysis of the model's effectiveness.
+The model's performance is assessed using various evaluation metrics such as accuracy, precision, recall, and F1-score. For selecting the best performing model, we have used ROC_AUC_Score and Recall metrics. 
+
+## Conclusion
+
+Following the evaluation of several models in our classification project, we observed the highest accuracy achieved by the K-Nearest Neighbors (KNN).
 
 ## Future Work
 - Deployment
